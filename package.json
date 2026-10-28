@@ -1,0 +1,39 @@
+{
+  "name": "biznes-crm",
+  "version": "1.0.0",
+  "description": "Business Manager — root scripts",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix backend && flutter pub get --directory frontend",
+
+    "dev": "npm run dev --prefix backend",
+
+    "fix:swc": "npm run fix:swc --prefix backend",
+
+    "flutter": "cd frontend && flutter run -d chrome",
+
+    "flutter:profile": "cd frontend && flutter run -d chrome --profile",
+
+    "flutter:release": "cd frontend && flutter run -d chrome --release",
+
+    "flutter:android": "cd frontend && flutter run -d android",
+
+    "flutter:ios": "cd frontend && flutter run -d ios",
+
+    "build": "npm run build --prefix backend",
+
+    "start": "npm run start --prefix backend",
+
+    "seed": "npm run seed --prefix backend",
+
+    "flutter:build:apk": "cd frontend && flutter build apk --release",
+
+    "flutter:build:web": "cd frontend && flutter build web --release",
+
+    "clean:backend": "rmdir /s /q backend\\node_modules",
+
+    "clean:flutter": "cd frontend && flutter clean",
+
+    "clean": "npm run clean:backend && npm run clean:flutter"
+  }
+}

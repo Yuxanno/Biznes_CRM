@@ -1,0 +1,50 @@
+name: business_manager
+description: Business CRM mobile app
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client
+  http: ^1.2.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Local storage (JWT)
+  shared_preferences: ^2.2.3
+
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Image picker & file handling
+  image_picker: ^1.1.2
+  file_picker: ^8.1.2
+
+  # Audio recording & playback
+  record: ^5.1.2
+  just_audio: ^0.9.40
+  audio_session: ^0.1.21
+
+  # UI utilities
+  cached_network_image: ^3.3.1
+  intl: ^0.19.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
